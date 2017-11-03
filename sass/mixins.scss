@@ -1,0 +1,22 @@
+@mixin align-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin row {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+@mixin row-space-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin mp-clear {
+  margin: 0;
+  padding: 0;
+}

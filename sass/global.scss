@@ -1,0 +1,6 @@
+body {
+  @include mp-clear;
+  background: $bg-darkgray;
+  font-family: $font-stack;
+  color: white;
+}

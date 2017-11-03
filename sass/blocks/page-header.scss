@@ -1,0 +1,14 @@
+.page-header {
+  &__logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    border: 1px solid red;
+  }
+
+  &__logo img {
+    width: 226px;
+    height: 30px;
+  }
+}
