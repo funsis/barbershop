@@ -14,10 +14,6 @@
     position: relative;
     text-align: center;
 
-    &--fast {
-      display: none;
-    }
-
     &--fast::before {
       content: "";
       position: absolute;
@@ -30,9 +26,6 @@
       transform: translate(-50%, -130px);
     }
 
-    &--cool {
-      display: none;
-    }
 
     &--cool::before {
       content: "";
@@ -44,10 +37,6 @@
       height: 95px;
       background-image: url("../img/cool.png");
       transform: translate(-50%, -130px);
-    }
-
-    &--expensive {
-      display: none;
     }
 
     &--expensive::before {
