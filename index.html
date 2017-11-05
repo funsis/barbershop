@@ -33,47 +33,47 @@
   <main class="page-main">
     <section class="stats">
       <div class="stats__wrapper">
-      <header class="stats__header">
-        <b class="stats__slogan">Стрижка у нас это выгодно!</b>
-        <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-      </header>
-      <table class="stats__content">
-        <tr class="stats__item stats__item--gray">
-          <td class="stats__value">1 500 <sup>*</sup></td>
-          <td class="stats__field">рублей<br>вложений</td>
-        </tr>
-        <tr class="stats__item stats__item--light-gray">
-          <td class="stats__value">7 200</td>
-          <td class="stats__field">секунд<br>времени мастера</td>
-        </tr>
-        <tr class="stats__item stats__item--dark">
-          <td class="stats__value">90 000</td>
-          <td class="stats__field">постриженных<br>волос</td>
-        </tr>
-        <tr class="stats__item stats__item--gray">
-          <td class="stats__value">500 000 <sup>*</sup></td>
-          <td class="stats__field">лайков и<br>комплиментов</td>
-        </tr>
-      </table>
-      <p class="stats__legend"><sup>*</sup> — приведённые данные ложь</p>
-    </div>
+        <header class="stats__header">
+          <b class="stats__slogan">Стрижка у нас это выгодно!</b>
+          <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+        </header>
+        <table class="stats__content">
+          <tr class="stats__item stats__item--gray">
+            <td class="stats__value">1 500 <sup>*</sup></td>
+            <td class="stats__field">рублей<br>вложений</td>
+          </tr>
+          <tr class="stats__item stats__item--light-gray">
+            <td class="stats__value">7 200</td>
+            <td class="stats__field">секунд<br>времени мастера</td>
+          </tr>
+          <tr class="stats__item stats__item--dark">
+            <td class="stats__value">90 000</td>
+            <td class="stats__field">постриженных<br>волос</td>
+          </tr>
+          <tr class="stats__item stats__item--gray">
+            <td class="stats__value">500 000 <sup>*</sup></td>
+            <td class="stats__field">лайков и<br>комплиментов</td>
+          </tr>
+        </table>
+        <p class="stats__legend"><sup>*</sup> — приведённые данные ложь</p>
+      </div>
     </section>
     <section class="advantages">
-      <div class="advantages__wraper slider">
-        <input class="slider__input" type="radio" id="slider-advantages-1" name="slider-control" chcked>
+      <div class="advantages__wrapper slider">
+        <input class="slider__input" type="radio" id="slider-advantages-1" name="slider-control" checked>
         <input class="slider__input" type="radio" id="slider-advantages-2" name="slider-control">
         <input class="slider__input" type="radio" id="slider-advantages-3" name="slider-control">
         <ul class="advantages__content">
-          <li class="advantages__item">
-            <h3 class="advantagw__title slider__item">Дорого</h3>
-            <p class="advantages__text">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+          <li class="advantages__item  slider__item advantages__item--fast">
+            <h3 class="advantages__title">Быстро</h3>
+            <p class="advantages__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
           </li>
-          <li class="advantages__item slider__item">
-            <h3 class="advantagw__title">Круто</h3>
+          <li class="advantages__item slider__item advantages__item--cool">
+            <h3 class="advantages__title">Круто</h3>
             <p class="advantages__text">Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. Во всяком случае внешне.</p>
           </li>
-          <li class="advantages__item slider__item">
-            <h3 class="advantagw__title">Дорого</h3>
+          <li class="advantages__item slider__item advantages__item--expensive">
+            <h3 class="advantages__title">Дорого</h3>
             <p class="advantages__text">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
           </li>
         </ul>
@@ -83,6 +83,10 @@
           <label class="slider__toggle" for="slider-advantages-3"></label>
         </div>
       </div>
+      <svg class="advantages__triangle" version="1.1" xml:space="preserve" viewBox="0 0 100 160" preserveAspectRatio="none" width="100%" height="34">
+        <polygon points="0,0 50.1,160 50.1,220 0,220 0,160"></polygon>
+        <polygon points="49.9,160 100,0 100,160 100,220 49.9,220"></polygon>
+      </svg>
     </section>
     <section class="news">
       <div class="news__wrapper">
@@ -99,7 +103,7 @@
     </section>
     <section class="reviews">
       <div class="reviews__wrap slider">
-        <input class="slider__input" type="radio" id="slider-reviews-1" name="slider-control" chcked>
+        <input class="slider__input" type="radio" id="slider-reviews-1" name="slider-control" checked>
         <input class="slider__input" type="radio" id="slider-reviews-2" name="slider-control">
         <input class="slider__input" type="radio" id="slider-reviews-3" name="slider-control">
         <h2 class="reviews__title">Отзывы о нас</h2>
