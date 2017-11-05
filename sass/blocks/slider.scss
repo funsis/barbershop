@@ -1,0 +1,23 @@
+.slider {
+  &__input {
+    display: none;
+  }
+
+  &__toggles {
+    text-align: center;
+  }
+
+  &__toggle {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+    border: 1px solid white;
+    transform: rotate(45deg);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

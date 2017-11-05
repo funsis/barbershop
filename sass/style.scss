@@ -3,6 +3,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "global.scss";
+@import "blocks/slider.scss";
 
 /* HEADER */
 
@@ -12,4 +13,5 @@
 /* MAIN */
 
 @import "blocks/page-main.scss";
+@import "blocks/stats.scss";
 @import "blocks/stats.scss";
