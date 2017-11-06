@@ -1,0 +1,75 @@
+.reviews {
+  &__wrapper {
+    position: relative;
+    padding: 0 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #f8f5f2;
+    text-align: center;
+  }
+
+  &__title {
+    @include mp-clear;
+    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    padding-left: 70px;
+    color: black;
+    text-align: left;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 25px;
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+
+  &__author-photo {
+    position: absolute;
+    top: 13px;
+    right: 100%;
+    transform: translateX(-20px);
+  }
+
+  &__author-name {
+    @include mp-clear;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &__text {
+    @include  mp-clear;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+/* ЛОГИКА СЛАЙДЕРА */
+
+#slider-reviews-1:checked ~ .reviews__toggles label[for="slider-reviews-1"],
+#slider-reviews-2:checked ~ .reviews__toggles label[for="slider-reviews-2"],
+#slider-reviews-3:checked ~ .reviews__toggles label[for="slider-reviews-3"] {
+  background-color: #353535;
+}
+
+
+#slider-reviews-1:checked ~ .reviews__content .slider__item:nth-child(1),
+#slider-reviews-2:checked ~ .reviews__content .slider__item:nth-child(2),
+#slider-reviews-3:checked ~ .reviews__content .slider__item:nth-child(3) {
+  display: block;
+}
