@@ -25,6 +25,7 @@
   }
 
   &__item {
+    @include mp-clear;
     position: relative;
     margin-bottom: 25px;
 
