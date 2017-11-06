@@ -1,0 +1,28 @@
+.news {
+  &__wrapper {
+    padding-top: 70px;
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+
+   &__title {
+     @include mp-clear;
+     margin-bottom: 35px;
+     font-size: 30px;
+     line-height: 30px;
+     font-weight: 700;
+     text-transform: uppercase;
+   }
+
+   &__content {
+     @include mp-clear;
+     list-style: none;
+   }
+
+   &__text {
+     @include mp-clear;
+     display: inline-block;
+     
+   }
+}

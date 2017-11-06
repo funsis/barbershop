@@ -21,7 +21,7 @@
       left: 50%;
       display: block;
       width: 95px;
-      height: 95px;
+      height: 94px;
       background-image: url("../img/fast.png");
       transform: translate(-50%, -130px);
     }
@@ -34,7 +34,7 @@
       left: 50%;
       display: block;
       width: 95px;
-      height: 95px;
+      height: 88px;
       background-image: url("../img/cool.png");
       transform: translate(-50%, -130px);
     }
@@ -46,7 +46,7 @@
       left: 50%;
       display: block;
       width: 95px;
-      height: 95px;
+      height: 91px;
       background-image: url("../img/expensive.png");
       transform: translate(-50%, -130px);
     }
@@ -64,6 +64,10 @@
     @include mp-clear;
     font-size: 20px;
     line-height: 27px;
+  }
+
+  &__toggles {
+    margin-bottom: 13px;
   }
 }
 
