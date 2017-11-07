@@ -1,0 +1,153 @@
+.page-footer {
+  &__wrapper {
+    position: relative;
+    padding-top: 34px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 34px;
+      background-color: $bg-lightgray;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+    }
+  }
+
+  &__contacts {
+    @include mp-clear;
+    display: block;
+    padding: 0 20px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    border: 1px solid #3d3d3d;
+    border-bottom: none;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    text-align: center;
+
+    & b {
+      display: inline-block;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+  }
+
+  &__contacts-tel {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__social {
+    @include mp-clear;
+    @include row;
+  }
+
+  &__social-link {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 33.33%;
+    height: 100px;
+    border: 1px solid #3d3d3d;
+    border-right: none;
+
+    &:last-child {
+      border-right: 1px solid #3d3d3d;
+    }
+
+    &:hover {
+      border: 1px  solid #545454;
+    }
+
+    &:hover + .page-footer__social-link {
+      border-left: none;
+    }
+
+    &:active {
+      background: #252525;
+      border: 0;
+      border-left: 1px solid #3d3d3d;
+    }
+
+    &:last-child:active {
+      border-right: 1px solid #3d3d3d;
+    }
+
+    &:active + .page-footer__social-link {
+      border-left: 1px solid #3d3d3d;
+    }
+
+    &--vk::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 23px;
+      height: 26px;
+      background: url("../img/css_sprites.png") -66px -10px;
+      transform: translate(-50%, -50%);
+    }
+
+    &--vk:active::before {
+      opacity: 0.3;
+    }
+
+    &--fb::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 18px;
+      height: 39px;
+      background: url("../img/css_sprites.png") -10px -66px;
+      transform: translate(-50%, -50%);
+    }
+
+    &--fb:active::before {
+      opacity: 0.3;
+    }
+
+    &--ig::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 36px;
+      height: 36px;
+      background: url("../img/css_sprites.png") -10px -10px;
+      transform: translate(-50%, -50%);
+    }
+
+    &--ig:active::before {
+      opacity: 0.3;
+    }
+  }
+
+  &__copyright {
+    @include mp-clear;
+    display: block;
+    padding: 0 20px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    border: 1px solid #3d3d3d;
+    border-top: none;
+    text-align: center;
+  }
+
+  &__copyright-intro {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+  }
+
+  &__copyright-btn {
+    width: 100%;
+  }
+}
