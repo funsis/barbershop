@@ -11,3 +11,15 @@
     height: 30px;
   }
 }
+
+
+@include tablet {
+  .page-header {
+    min-height: 72px;
+    background-color: black;
+
+    &__logo {
+      display: none;
+    }
+  }
+}
